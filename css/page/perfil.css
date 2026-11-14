@@ -1,0 +1,36 @@
+#perfil {
+  text-align: center;
+  padding-top: 93px;
+}
+
+#perfil h2 {
+  font-size: 32px;
+  margin-top: -6px;
+}
+
+#perfil form {
+  width: 304px;
+  margin: 43px auto 0;
+}
+
+#perfil .botao {
+  min-width: 195px;
+  font-size: 20px;
+}
+
+@media (max-width: 900px) {
+  #perfil {
+    padding: 110px 16px 40px;
+  }
+
+  #perfil h2 {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 900px) {
+  #perfil form, .cadastro-form form {
+    width: min(304px, 100%);
+  }
+}

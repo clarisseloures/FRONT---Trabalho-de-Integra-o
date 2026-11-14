@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Cardápio | Donnuts &amp; Breack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&family=Hammersmith+One&family=Holtwood+One+SC&display=swap" rel="stylesheet">
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <button class="alternar-tema" type="button" title="Ativar modo escuro">&#9790;</button>
+    <header>
+        <details class="menu">
+            <summary title="Abrir menu">
+                <img src="images/menu.svg" alt="Menu">
+            </summary>
+            <nav>
+                <a href="carrinho.html">
+                    <img src="images/1-2-imgBasketShoppingSolidFull1.svg" alt="Carrinho">
+                </a>
+                <a href="cardapio.html#busca">
+                    <img src="images/1-2-imgMagnifyingGlassSolidFull11.svg" alt="Buscar sabores">
+                </a>
+                <a class="conta" href="login.html">Login</a>
+            </nav>
+        </details>
+    </header>
+    <a class="voltar" href="index.html">
+        <img src="images/2007-2-imgArrowLeftLongSolidFull1.svg" alt="Voltar à página inicial">
+    </a>
+    <main id="cardapio">
+        <h1>Donnuts</h1>
+        <h2>Cardápio da Semana</h2>
+        <form id="busca" class="busca" action="cardapio.html" method="get" role="search">
+            <label for="buscar-sabor">Buscar um sabor</label>
+            <div class="campo-busca">
+                <input id="buscar-sabor" name="q" type="search" placeholder="Chocolate, morango, Nutella..." autocomplete="off">
+                <button type="submit" title="Buscar">
+                    <img src="images/1-2-imgMagnifyingGlassSolidFull11.svg" alt="Buscar">
+                </button>
+            </div>
+        </form>
+        <p id="resultado-busca" role="status"></p>
+        <section class="produtos">
+            <article class="produto" data-produto="original">
+                <button class="adicionar" data-adicionar="original">
+                    <span class="foto-produto">
+                        <img src="images/2006-11-imgImage3.png" alt="Donut Original">
+                    </span>
+                    <span class="sobrepor">
+                        <img src="images/2006-11-imgBasketShoppingSolidFull11.svg" alt="">
+                    </span>
+                </button>
+                <h3>Original</h3>
+                <p>R$12.00</p>
+            </article>
+            <article class="produto" data-produto="chocolate">
+                <button class="adicionar" data-adicionar="chocolate">
+                    <span class="foto-produto">
+                        <img src="images/2006-11-imgImage2.png" alt="Donut Chocolate">
+                    </span>
+                    <span class="sobrepor">
+                        <img src="images/2006-11-imgBasketShoppingSolidFull11.svg" alt="">
+                    </span>
+                </button>
+                <h3>Chocolate</h3>
+                <p>R$12.00</p>
+            </article>
+            <article class="produto" data-produto="amendoim">
+                <button class="adicionar" data-adicionar="amendoim">
+                    <span class="foto-produto">
+                        <img src="images/2006-11-imgImageRemovebgPreview1.png" alt="Donut Amendoim C/ Nutella">
+                    </span>
+                    <span class="sobrepor">
+                        <img src="images/2006-11-imgBasketShoppingSolidFull11.svg" alt="">
+                    </span>
+                </button>
+                <h3>Amendoim C/ Nutella</h3>
+                <p>R$12.00</p>
+            </article>
+            <article class="produto" data-produto="morango">
+                <button class="adicionar" data-adicionar="morango">
+                    <span class="foto-produto">
+                        <img src="images/2006-11-imgImageRemovebgPreview21.png" alt="Donut Morango c/Confeitos">
+                    </span>
+                    <span class="sobrepor">
+                        <img src="images/2006-11-imgBasketShoppingSolidFull11.svg" alt="">
+                    </span>
+                </button>
+                <h3>Morango c/Confeitos</h3>
+                <p>R$12.00</p>
+            </article>
+        </section>
+        <p role="status" id="aviso"></p>
+        <a class="botao ir-carrinho" href="carrinho.html">Ir para o carrinho</a>
+    </main>
+    <footer>
+        <a href="index.html" class="marca">
+            <div class="marca">
+                <h1>Donnuts</h1>
+                <p>
+                    <span>&amp;</span>
+                    BREACK
+                </p>
+            </div>
+        </a>
+        <div>
+            <h2>Precisa de Ajuda?</h2>
+            <a href="tel:+5531912345678">(31)91234-5678</a>
+        </div>
+        <div>
+            <h2>Redes sociais</h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/">
+                    <img src="images/2005-14-imgInstagramBrandsSolidFull1.svg" alt="">
+                </a>
+                <a href="https://wa.me/5531912345678">
+                    <img src="images/2005-14-imgWhatsappBrandsSolidFull1.svg" alt="">
+                </a>
+                <a href="cardapio.html">
+                    <img src="images/2005-14-imgArrowUpRightFromSquareSolidFull1.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

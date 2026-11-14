@@ -1,8 +1,21 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
-    font-family: 'Nunito', sans-serif;
-    list-style: none;
-  }
-  
+/* GLOBAL */
+@import url(./css/global/global.css);
+@import url(./css/global/footer.css);
+
+/* HEADER */
+@import url(./css/header/header.css);
+
+/* PAGINAS */
+@import url(./css/page/inicio.css);
+@import url(./css/page/historia.css);
+@import url(./css/page/cardapio.css);
+@import url(./css/page/depoimentos.css);
+@import url(./css/page/login.css);
+@import url(./css/page/cadastro.css);
+@import url(./css/page/perfil.css);
+@import url(./css/page/carrinho.css);
+@import url(./css/page/pedido.css);
+
+/* TEMA E RESPONSIVIDADE */
+@import url(./css/global/tema.css);
+@import url(./css/global/responsivo.css);

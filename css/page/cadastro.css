@@ -1,0 +1,71 @@
+#cadastro {
+  display: flex;
+}
+
+.convite {
+  width: 50%;
+  background: var(--fundo);
+  text-align: center;
+  padding-top: 110px;
+}
+
+.convite > p {
+  color: white;
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.convite > .botao {
+  margin-top: 32px;
+}
+
+.convite .recorte-mascote {
+  width: 270px;
+  height: 226px;
+  margin: 40px auto 0;
+}
+
+.cadastro-form {
+  width: 50%;
+  text-align: center;
+  padding-top: 113px;
+}
+
+.cadastro-form h1 {
+  font-size: 32px;
+  line-height: 1.65;
+}
+
+.cadastro-form h2 {
+  font-size: 16px;
+}
+
+.cadastro-form form {
+  width: 304px;
+  margin: 44px auto 0;
+}
+
+.cadastro-form .campo {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+  #cadastro {
+    flex-direction: column;
+  }
+
+  .convite, .cadastro-form {
+    width: 100%;
+    padding: 45px 20px;
+  }
+
+  .cadastro-form h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 900px) {
+  #perfil form, .cadastro-form form {
+    width: min(304px, 100%);
+  }
+}

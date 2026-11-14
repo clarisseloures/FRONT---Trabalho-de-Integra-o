@@ -1,0 +1,162 @@
+#carrinho {
+  padding-top: 138px;
+  text-align: center;
+}
+
+#carrinho h2 {
+  margin-top: -16px;
+}
+
+.checkout {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  margin: 42px 54px 0 109px;
+}
+
+#itens-carrinho {
+  flex: 1;
+  min-width: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 180px;
+  font-size: 15px;
+  gap: 15px;
+}
+
+.item + .item {
+  border-top: 1px solid var(--marrom);
+}
+
+.item > img {
+  width: 163px;
+  height: 163px;
+  object-fit: cover;
+}
+
+.item h3 {
+  font-size: 15px;
+  text-align: left;
+  width: 150px;
+}
+
+.item p {
+  color: var(--rosa);
+  white-space: nowrap;
+}
+
+.item button {
+  background: transparent;
+}
+
+.item .quantidade {
+  font: 14px sans-serif;
+}
+
+.controle-quantidade {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.controle-quantidade button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 24px;
+  transition: opacity 0.3s ease;
+}
+
+.controle-quantidade .diminuir {
+  width: 20px;
+  height: 20px;
+  margin: 0 3px;
+  border-radius: 50%;
+  background: var(--rosa);
+  color: var(--rosa-claro);
+  font: bold 18px/1 sans-serif;
+}
+
+.controle-quantidade button:hover {
+  opacity: 0.7;
+}
+
+.controle-quantidade button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.resumo {
+  width: 300px;
+  padding-top: 60px;
+  flex-shrink: 0;
+}
+
+.resumo h3 {
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.resumo #total {
+  color: var(--rosa);
+  font-size: 15px;
+  margin-top: 22px;
+}
+
+.endereco-pedido {
+  font-size: 10px;
+  color: white;
+  margin: 24px 0 28px;
+}
+
+.resumo .botao {
+  min-width: 165px;
+}
+
+@media (max-width: 900px) {
+  #carrinho {
+    padding: 120px 16px 45px;
+  }
+
+  #carrinho h2 {
+    margin-top: 0;
+  }
+
+  .checkout {
+    margin: 30px 0 0;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #itens-carrinho {
+    width: 100%;
+  }
+
+  .item {
+    gap: 8px;
+    min-height: 130px;
+    font-size: 11px;
+  }
+
+  .item > img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .item h3 {
+    width: auto;
+    flex: 1;
+    font-size: 11px;
+  }
+
+  .resumo {
+    width: 100%;
+    padding-top: 20px;
+  }
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360">
+  <defs>
+    <g id="donut" fill="none" stroke="#e669a6" stroke-width="2.5" stroke-linecap="round">
+      <circle r="34"/>
+      <circle r="11"/>
+      <path d="M-28-9C-24-21-19-27-10-26S-2-33 7-28 17-29 24-19 33-10 28 0 33 13 23 19 16 29 6 26-3 33-12 27-24 26-27 16-33 2-28-9Z"/>
+      <path d="M-17-15l4 3M5-22l-2 5M20-8l-5 2M17 15l-4-3M-4 23l2-5M-22 7l5-1"/>
+    </g>
+  </defs>
+  <use href="#donut" transform="translate(62 63) rotate(-18)"/>
+  <use href="#donut" transform="translate(245 40) rotate(28) scale(.75)"/>
+  <use href="#donut" transform="translate(421 92) rotate(-32) scale(1.1)"/>
+  <use href="#donut" transform="translate(148 209) rotate(20) scale(.9)"/>
+  <use href="#donut" transform="translate(328 247) rotate(-15)"/>
+  <use href="#donut" transform="translate(42 322) rotate(38) scale(.65)"/>
+  <use href="#donut" transform="translate(440 325) rotate(-12) scale(.7)"/>
+</svg>

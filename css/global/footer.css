@@ -1,0 +1,52 @@
+footer {
+  background: var(--fundo);
+  min-height: 223px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px max(30px, calc((100vw - 1120px) / 2));
+  gap: 30px;
+  text-align: center;
+}
+
+footer .marca h1 {
+  font-size: 40px;
+}
+
+footer .marca p {
+  font-size: 20px;
+}
+
+footer .marca span {
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+footer h2 {
+  color: var(--marrom);
+  font-size: 20px;
+  margin-bottom: 9px;
+}
+
+footer div > a {
+  color: var(--rosa);
+  font-size: 15px;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.redes img {
+  display: block;
+}
+
+@media (max-width: 700px) {
+  footer {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 35px;
+  }
+}

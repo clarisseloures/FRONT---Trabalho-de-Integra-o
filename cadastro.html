@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Cadastro | Donnuts &amp; Breack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&family=Hammersmith+One&family=Holtwood+One+SC&display=swap" rel="stylesheet">
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <button class="alternar-tema" type="button" title="Ativar modo escuro">&#9790;</button>
+    <main id="cadastro">
+        <section class="convite">
+            <div class="marca">
+                <h1>Donnuts</h1>
+                <p>
+                    <span>&amp;</span>
+                    BREACK
+                </p>
+            </div>
+            <p>Já possui uma conta?</p>
+            <a class="botao" href="login.html">Fazer Login</a>
+            <span class="recorte-mascote">
+                <img src="images/2027-36-imgDesignSemNome1RemovebgPreview4.png" alt="Mascote Donnuts">
+            </span>
+        </section>
+        <section class="cadastro-form">
+            <h1>Você está quase lá!</h1>
+            <h2>Cadastre-se para iniciar:</h2>
+            <form id="form-cadastro">
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="nome@exemplo.com" required>
+                </div>
+                <div class="campo">
+                    <label for="telefone">Telefone</label>
+                    <input id="telefone" name="telefone" type="tel" autocomplete="tel-national" inputmode="numeric" minlength="14" maxlength="15" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" placeholder="(31) 99999-9999" title="Informe o DDD e um telefone com 10 ou 11 dígitos." required>
+                </div>
+                <div class="campo">
+                    <label for="endereco">Endereço</label>
+                    <input id="endereco" name="endereco" type="text" autocomplete="street-address" minlength="3" maxlength="160" placeholder="Rua, número, bairro e cidade" required>
+                </div>
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input id="senha" name="senha" type="password" autocomplete="new-password" minlength="8" maxlength="64" placeholder="De 8 a 64 caracteres" required>
+                </div>
+                <button class="botao">Entrar</button>
+                <p role="status" id="aviso"></p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

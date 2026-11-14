@@ -1,0 +1,84 @@
+.pagina-inicial {
+  max-width: none;
+}
+
+.pagina-inicial #depoimentos {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#historia {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  margin: 0 auto 80px;
+  padding: 120px 32px 140px;
+  text-align: center;
+  background-color: #f4bfd7;
+  color: #5c303e;
+}
+
+#historia::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url("../../images/fundo-donuts.svg");
+  background-repeat: round;
+  background-size: 480px 360px;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+:root[data-tema="escuro"] #historia {
+  background-color: #191217;
+  color: var(--marrom);
+}
+
+:root[data-tema="escuro"] #historia::before {
+  opacity: 0.14;
+}
+
+.detalhe-historia {
+  color: var(--rosa);
+  font-size: 15px;
+}
+
+#historia h2 {
+  margin: 16px 0 32px;
+  color: var(--marrom);
+  font-size: clamp(28px, 4vw, 44px);
+}
+
+#historia p {
+  margin: 0 auto 20px;
+  max-width: 650px;
+  font: 18px/1.9 sans-serif;
+}
+
+#historia .botao {
+  margin-top: 24px;
+}
+
+#historia .descer-depoimentos {
+  position: static;
+  transform: none;
+  width: fit-content;
+  margin: 88px auto 0;
+}
+
+@media (max-width: 600px) {
+  #historia {
+    padding: 80px 24px 96px;
+    margin-bottom: 48px;
+  }
+
+  #historia::before {
+    background-size: 320px 240px;
+  }
+
+  #historia p {
+    font-size: 16px;
+  }
+}

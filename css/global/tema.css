@@ -1,0 +1,59 @@
+:root {
+  color-scheme: light;
+  --campo: #ffffff;
+  --texto-suave: #744445;
+  --texto-botao: #ffffff;
+}
+
+:root[data-tema="escuro"] {
+  color-scheme: dark;
+  --rosa-claro: #241a20;
+  --rosa: #f49bc6;
+  --botao: #e889b6;
+  --marrom: #f5e4ec;
+  --fundo: #33242d;
+  --campo: #44323d;
+  --texto-suave: #dfc1d0;
+  --texto-botao: #241a20;
+}
+
+.campo input,
+.campo-busca {
+  background: var(--campo);
+}
+
+:root[data-tema="escuro"] input::placeholder {
+  color: var(--texto-suave);
+  opacity: 1;
+}
+
+.botao {
+  color: var(--texto-botao);
+}
+
+.cadastre,
+.convite > p,
+.endereco-pedido {
+  color: var(--texto-suave);
+}
+
+.alternar-tema {
+  position: absolute;
+  top: 28px;
+  right: max(84px, calc((100vw - 1200px) / 2 + 54px));
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--fundo);
+  color: var(--rosa);
+  font: 28px/1 sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.alternar-tema:hover {
+  background: var(--campo);
+}

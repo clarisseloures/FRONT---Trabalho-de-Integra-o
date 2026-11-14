@@ -1,0 +1,61 @@
+#pedido {
+  text-align: center;
+  padding-top: 96px;
+}
+
+#pedido h2 {
+  font-size: 32px;
+  margin-top: -20px;
+}
+
+.linha-pedido {
+  display: block;
+  margin: 26px auto 35px;
+}
+
+.pedido-resumo {
+  font-family: 'Cutive', serif;
+}
+
+.pedido-resumo h3 {
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+.pedido-resumo > p {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.ajuda {
+  gap: 16px;
+  margin-top: 42px;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  #pedido {
+    padding: 130px 15px 50px;
+  }
+
+  #pedido h1 {
+    font-size: clamp(28px, 7vw, 50px);
+  }
+
+  #pedido h2 {
+    font-size: 22px;
+    margin-top: 0;
+  }
+
+  .linha-pedido {
+    max-width: 90%;
+  }
+
+  .pedido-resumo h3 {
+    font-size: 22px;
+  }
+
+  .pedido-resumo > p {
+    font-size: 18px;
+  }
+}
